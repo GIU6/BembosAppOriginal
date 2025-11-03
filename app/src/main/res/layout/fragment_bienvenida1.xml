@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Bienvenida1">
+
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="450dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="-170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bienvenida01"
+        android:contentDescription="@string/desc_background"
+        android:scaleType="fitCenter" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="82dp"
+        android:text="Delivery"
+        android:textColor="@color/black"
+        android:fontFamily="@font/oswald_regular"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="150dp"
+        android:text="@string/disfrutar"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="@font/crimson_regular"/>
+
+
+    <TextView
+        android:id="@+id/tvOmitir"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/Omitirr"
+        android:textColor="@color/dark_blue"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/oswald_regular"/>
+
+
+    <View
+        android:id="@+id/indicator1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginStart="190dp"
+        android:background="@drawable/sh_bg_circle_dar_blue"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/indicator2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/sh_bg_circle_dim_gray"/>
+
+
+    <ImageView
+        android:id="@+id/ivIzquierda"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/nextbutton"
+        android:focusable="true"
+        android:background="@drawable/sh_bg_circle_dar_blue"
+        android:src="@drawable/ic_right"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="330dp"/>
+
+</FrameLayout>

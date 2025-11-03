@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Login">
+
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/dark_blue" />
+
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-230dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/titulo_login"
+        android:contentDescription="@string/titulo_app" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="235dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/correo_electronico"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/crimson_regular" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:background="@drawable/se_bg_edt_white"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/dim_gray"
+                android:hint="nombre@dominio.com"
+                android:fontFamily="@font/crimson_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/passwordd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/crimson_regular" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPasswordd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:background="@drawable/se_bg_edt_white"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="19sp"
+                android:textColorHint="@color/dim_gray"
+                android:hint=". . . . . . ."
+                android:maxLength="20"
+                android:textStyle="bold"
+                android:fontFamily="@font/crimson_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvOlvidastes"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/olvidastes_passwordd"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/crimson_regular" />
+
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sh_bg_btn_dark_blue"
+            android:fontFamily="@font/oswald_regular"
+            android:text="@string/ingresar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="19dp" />
+
+
+        <Button
+            android:id="@+id/btnIngresarCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sh_bg_btn_white"
+            android:drawableStart="@drawable/ic_google"
+            android:drawablePadding="-50dp"
+            android:fontFamily="@font/oswald_regular"
+            android:paddingStart="70dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="16dp"
+            android:text="@string/ingresarCorreo"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sh_bg_btn_white"
+            android:fontFamily="@font/oswald_regular"
+            android:text="@string/Registrar"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvIngresarHome"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:text="@string/ingresar_invitado"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/crimson_regular" />
+
+    </LinearLayout>
+
+</FrameLayout>

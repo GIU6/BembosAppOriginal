@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/ic_home_open"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_hamburger_close"
+        android:title="@string/menu" />
+
+    <item
+        android:id="@+id/navigation_beneficios"
+        android:icon="@drawable/ic_star_close"
+        android:title="@string/beneficios" />
+
+    <item
+        android:id="@+id/navigation_favoritos"
+        android:icon="@drawable/ic_favorite_close"
+        android:title="@string/favoritos" />
+
+
+
+</menu>

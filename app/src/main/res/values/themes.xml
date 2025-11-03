@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BembosAppOriginal" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Theme.BembosAppOriginal" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorSecondary">@color/dim_gray</item>
+        <item name="colorSecondaryVariant">@color/dark_blue</item>
+        <item name="colorOnSecondary">@color/golden</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
     </style>
 
-    <style name="Theme.BembosAppOriginal" parent="Base.Theme.BembosAppOriginal" />
 </resources>
