@@ -35,11 +35,7 @@
         android:orientation="vertical">
 
 
-        <LinearLayout
-            style="?android:attr/buttonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" />
+
 
 
         <TextView

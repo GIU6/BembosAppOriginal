@@ -37,4 +37,24 @@
     <string name="ingresa_documento">Ingresa documento</string>
     <string name="aceptar_terminos">Aceptar recibir promociones y novedades.</string>
     <string name="aceptar_transferencia">Aceptar la transferencia de datos a empresas asociadas.</string>
+    <string name="informaci_personal">Información Personal</string>
+    <string name="nombre">Nombre *</string>
+    <string name="apellido">Apellido *</string>
+    <string name="ej_torres">Ej. Torres</string>
+    <string name="tipo_documento">Tipo de documento *</string>
+    <string name="Nombre">Nombre *</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Apellidoo">Apellido *</string>
+    <string name="tipdocumento">Tipo de documento</string>
+    <string name="ej_camila">Ej.Camila</string>
+    <string name="ej_torre">Ej. Torres</string>
+    <string name="phone">Celular *</string>
+    <string name="phones">--- --- ---</string>
+    <string name="cumpleaños">Cumpleaños*</string>
+    <string name="phonee">--- --- ---</string>
+    <string name="dd_mm_aaaa">DD/MM/AAAA</string>
+    <string name="nombre_dominio_com">nombre@dominio.com</string>
+    <string name="confirmar_passwordd">Confirmar passwordd</string>
+    <string name="confirmar_contrase">Confirmar_contraseña</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
 </resources>

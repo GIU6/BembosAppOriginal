@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Registrar">
+
+
+    <View
+        android:id="@+id/toolbar"
+        android:background="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="-340dp"
+        android:text="@string/Crear_Cuenta"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oswald_regular"/>
+
+    <ImageView
+        android:id="@+id/ivIzquierda"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="9dp"
+        android:clickable="true"
+        android:contentDescription="@string/nextbutton"
+        android:focusable="true"
+         android:layout_marginStart="4dp"
+        android:src="@drawable/ic_left"
+        android:layout_marginTop="-3dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="-40dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/Nombre"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:endIconMode="clear_text"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint="@string/ej_camila"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/Apellidoo"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                app:endIconMode="clear_text"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint="@string/ej_torre"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvTipoDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/tipdocumento"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTipoDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/dark_blue"
+                app:endIconMode="dropdown_menu"
+                app:hintEnabled="false">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvDocType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint="@string/selectopcion"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/numero_documento"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:endIconMode="clear_text"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint="@string/ingresa_documento"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvCelular"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/crimson_regular"
+                    android:text="@string/phone"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCelular"
+                    android:layout_width="165dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="-160dp"
+                    android:layout_marginTop="35dp"
+                    app:endIconMode="clear_text"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/se_bg_edt_white"
+                        android:fontFamily="@font/crimson_regular"
+                        android:hint="@string/phonee"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/dim_gray"
+                        android:textSize="25sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvCumple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-18dp"
+                    android:fontFamily="@font/crimson_regular"
+                    android:text="@string/cumpleaños"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_cumpleanos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-170dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/se_bg_edt_white"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/dd_mm_aaaa"
+                        android:inputType="date"
+                        android:padding="15dp"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="-10dp"
+                android:alpha="0.3"
+                android:background="@color/dim_gray" />
+
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/correo_electronico"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                app:endIconMode="clear_text"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint="@string/nombre_dominio_com"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/passwordd"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPasswordd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint=". . . . . . ."
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvConfirmarContra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/crimson_regular"
+                android:text="@string/confirmar_contrase"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirContra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/se_bg_edt_white"
+                    android:fontFamily="@font/crimson_regular"
+                    android:hint=". . . . . . ."
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:minHeight="48dp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/dim_gray"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/cbPromotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="@color/dark_blue"
+                android:paddingStart="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/aceptar_terminos"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/cbDataTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="@color/dark_blue"
+                android:paddingStart="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/aceptar_transferencia"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/crimson_regular"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/terminos"
+                android:textColor="@color/bright_blue"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btncuentagoogle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/sh_bg_btn_dark_blue"
+                android:text="@string/Crear_Cuenta"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿ Si tines cuenta ?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Iniciar Sesión"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

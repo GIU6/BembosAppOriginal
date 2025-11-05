@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation("com.google.android.material:material:<última versión>")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

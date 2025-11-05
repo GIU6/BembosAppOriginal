@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_login_to_loginGoogle"
             app:destination="@id/navigation_loginGoogle" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_registrar3"
+            app:destination="@id/navigation_registrar" />
     </fragment>
     <fragment
         android:id="@+id/navigation_loginGoogle"
@@ -48,4 +51,9 @@
             android:id="@+id/action_bienvenida1_to_navigation_bienvenida2"
             app:destination="@id/navigation_bienvenida2" />
     </fragment>
+    <fragment
+        android:id="@+id/navigation_registrar"
+        android:name="com.example.bembosapporiginal.ui.Registrar"
+        android:label="fragment_registrar"
+        tools:layout="@layout/fragment_registrar" />
 </navigation>
