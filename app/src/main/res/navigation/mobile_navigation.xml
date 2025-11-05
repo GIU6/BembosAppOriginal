@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_navigation_login_to_navigation_registrar3"
             app:destination="@id/navigation_registrar" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_recuperarContra"
+            app:destination="@id/navigation_recuperarContra" />
     </fragment>
     <fragment
         android:id="@+id/navigation_loginGoogle"
@@ -56,4 +59,9 @@
         android:name="com.example.bembosapporiginal.ui.Registrar"
         android:label="fragment_registrar"
         tools:layout="@layout/fragment_registrar" />
+    <fragment
+        android:id="@+id/navigation_recuperarContra"
+        android:name="com.example.bembosapporiginal.ui.RecuperarContra"
+        android:label="fragment_recuperar_contra"
+        tools:layout="@layout/fragment_recuperar_contra" />
 </navigation>

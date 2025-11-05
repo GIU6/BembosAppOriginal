@@ -57,4 +57,7 @@
     <string name="confirmar_passwordd">Confirmar passwordd</string>
     <string name="confirmar_contrase">Confirmar_contraseña</string>
     <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="recuperar_contrase">Recuperar contraseña</string>
+    <string name="introduccion">Por favor, introduzca su dirección de correo electrónico. Recibirá un enlace para crear una nueva contraseña por correo electrónico.</string>
+    <string name="Correo_electronico">Correo electronico *</string>
 </resources>
