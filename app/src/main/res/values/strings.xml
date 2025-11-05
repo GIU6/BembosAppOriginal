@@ -60,4 +60,21 @@
     <string name="recuperar_contrase">Recuperar contraseña</string>
     <string name="introduccion">Por favor, introduzca su dirección de correo electrónico. Recibirá un enlace para crear una nueva contraseña por correo electrónico.</string>
     <string name="Correo_electronico">Correo electronico *</string>
+    <string name="restablecer_contra">Restablecer contraseña</string>
+    <string name="codigo_validación">Ingresa código de validación</string>
+    <string name="nueva_contra">Nueva contraseña *</string>
+    <string name="nuevacontra">......</string>
+    <string name="confirmarContra">Confirmar Contraseña</string>
+    <string name="ConfirmarContra">Confirmar contraseña *</string>
+    <string name="confircontra">......</string>
+    <string name="al_menos_8_caracteres">Al menos 8 caracteres</string>
+    <string name="incluir_numero">Incluir al menos un número</string>
+    <string name="cambiar_contrase">Cambiar contraseña</string>
+    <string name="valida">......</string>
+    <string name="solicitar_codigo">Esperar 1:44 para poder solicitar un nuevo código</string>
+    <string name="caracter3">Utilice al menos un cáracter especial</string>
+    <string name="caracter2">Incluir letras mayúsculas y minúsculas</string>
+    <string name="correo_usuario">birabernal46@gmail.com</string>
+    <string name="restablecida">¡Tu Contraseña Ha Sido Restablecida!</string>
+    <string name="aceptar">Aceptar</string>
 </resources>

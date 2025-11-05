@@ -63,5 +63,23 @@
         android:id="@+id/navigation_recuperarContra"
         android:name="com.example.bembosapporiginal.ui.RecuperarContra"
         android:label="fragment_recuperar_contra"
-        tools:layout="@layout/fragment_recuperar_contra" />
+        tools:layout="@layout/fragment_recuperar_contra" >
+        <action
+            android:id="@+id/action_navigation_recuperarContra_to_restablecerContra"
+            app:destination="@id/restablecerContra" />
+    </fragment>
+    <fragment
+        android:id="@+id/restablecerContra"
+        android:name="com.example.bembosapporiginal.ui.RestablecerContra"
+        android:label="fragment_restablecer_contra"
+        tools:layout="@layout/fragment_restablecer_contra" >
+        <action
+            android:id="@+id/action_restablecerContra_to_confirmContra"
+            app:destination="@id/confirmContra" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmContra"
+        android:name="com.example.bembosapporiginal.ui.ConfirmContra"
+        android:label="fragment_confirm_contra"
+        tools:layout="@layout/fragment_confirm_contra" />
 </navigation>

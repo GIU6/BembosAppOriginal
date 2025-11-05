@@ -9,6 +9,12 @@
     tools:context=".ui.Login">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="extends Fragment" />
+
     <View
         android:id="@+id/headerBackground"
         android:layout_width="match_parent"
